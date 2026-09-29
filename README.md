@@ -33,8 +33,7 @@ Two variants are provided:
 ```bash
 git clone https://github.com/tmh-signlanguage/s-matcha-phon.git
 cd s-matcha-phon
- 
-# TODO: add requirements.txt
+
 conda create -n cfm-sl python=3.10 -y
 conda activate cfm-sl
 
