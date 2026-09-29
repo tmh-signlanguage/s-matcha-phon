@@ -7,7 +7,7 @@ KTH Royal Institute of Technology, Stockholm, Sweden / The Finnish Ministry of J
  
 \*Equal contribution
  
-[Project page](https://github.com/tmh-signlanguage/s-matcha-phon/)
+[Project page](https://www.speech.kth.se/research/s-matcha-phon/)
 
 ![Pipeline overview](static/overview4.png)
 
