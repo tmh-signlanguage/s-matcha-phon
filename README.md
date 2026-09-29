@@ -35,9 +35,22 @@ git clone https://github.com/tmh-signlanguage/s-matcha-phon.git
 cd s-matcha-phon
  
 # TODO: add requirements.txt
-conda create -n smatcha python=3.10
-conda activate smatcha
+conda create -n cfm-sl python=3.10 -y
+conda activate cfm-sl
+
+# 1. PyTorch for your GPU
+#    AMD / ROCm:
+pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/rocm6.0
+#    NVIDIA / CUDA:
+pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu121
+
+# 2. everything else
 pip install -r requirements.txt
+
+# 3. optional: rendering
+pip install smplx trimesh pyrender
+
+python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
 ```
 
 ## Data
