@@ -31,7 +31,7 @@ from einops import rearrange
 # Fallback for standalone callers (smoke_test / dataloader_test / integrity_test below).
 # Training runs should set this via Hydra: `data.h5_labels_path` in configs/data/smplx.yaml.
 DEFAULT_H5_LABELS_PATH = (
-    "/pfs/lustrep1/scratch/project_465002480/lightning-hydra-template/data/"
+    "XX"
     "combined_data_labels_no_gaps_120fps_fused.h5"
 )
 # Same pattern for the per-feature mean/std the pose h5 was z-scored with. Training
@@ -39,7 +39,7 @@ DEFAULT_H5_LABELS_PATH = (
 # was built with (mocap and PHOENIX differ), or unnormalize() silently de-scales
 # with the wrong numbers.
 DEFAULT_NORM_STATS_PATH = (
-    "/pfs/lustrep1/scratch/project_465002480/lightning-hydra-template/data/"
+    "XX"
     "norm_stats_6d_mocap.json"
 )
 
